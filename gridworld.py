@@ -301,8 +301,10 @@ class GridWorld():
         self.height = height
         self.n_states = width * height
         self.n_actions = 4  # left, up, right, down
-
+        
         self.grid = fullgrid_init(width, height, wall_horiz, wall_vert)
+        self.wall_horiz = wall_horiz
+        self.wall_vert = wall_vert
 
         self.controllability = controllability
         self.wind = wind
